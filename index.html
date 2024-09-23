@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="cursor: url(https://cdn.custom-cursor.com/db/8106/32/among-us-character-in-pikachu-skin-cursor.png) , default;">
+    <div class="container">
+        <h1>Lista de Compras</h1>
+
+        <div>
+            <label for="itemName">Nombre del ítem:</label>
+            <input type="text" id="itemName" placeholder="Ej: Amd 5700g">
+
+            <label for="itemPrice">Precio:</label>
+            <input type="number" id="itemPrice" placeholder="Ej: 10.50">
+
+            <button onclick="agregarItem()" style= "cursor:  url(https://cdn.custom-cursor.com/db/8105/32/among-us-character-in-pikachu-skin-pointer.png), pointer !important">Agregar ítem</button>
+        </div>
+
+        <h2>Lista:</h2>
+        <ul id="listaCompras"></ul>
+
+        <h3>Total: $<span id="totalCompra">0.00</span></h3>
+
+        <!-- Botón para imprimir usando la función del navegador -->
+        <button onclick="imprimirLista()" style= "cursor:  url(https://cdn.custom-cursor.com/db/8105/32/among-us-character-in-pikachu-skin-pointer.png), pointer !important">Imprimir lista</button>
+
+        <!-- Botón para descargar en PDF -->
+        <button onclick="descargarPDF()" style= "cursor:  url(https://cdn.custom-cursor.com/db/8105/32/among-us-character-in-pikachu-skin-pointer.png), pointer !important">Descargar en PDF</button>
+        <p>Angel Tello - Versión 1.0</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

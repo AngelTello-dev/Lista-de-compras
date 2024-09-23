@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://img.freepik.com/vector-gratis/diseno-papel-carta-blanco-blanco_53876-118304.jpg?t=st=1727037790~exp=1727041390~hmac=4afee6385c74d55cfe985524b3e7074acfba1b48562c1ac3c9410b698a59df01&w=740');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} 
+
+.container {
+    /* Fondo blanco con transparencia */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    /* Limita la altura máxima del contenedor */
+    max-height: 90vh;
+    /* Permite scroll si el contenido excede la altura */ 
+    overflow-y: auto;
+    /* Para que el sticky funcione dentro de este contenedor */
+    position: relative;
+}
+
+h1 {
+    position: sticky;
+    top: 0;
+    /* Fondo blanco semitransparente */
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px 0;
+    margin: 0;
+    z-index: 100;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    /* Ancho adaptado a la caja */
+    width: calc(100% - 12px);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+    /* Limita la altura de la lista */
+    max-height: 300px;
+    /* Añade scroll si la lista crece demasiado */
+    overflow-y: auto; 
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+p{
+font-family: cursive;
+}
+
+@media print {
+    body {
+        background-image: none;
+    }
+}
